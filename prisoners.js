@@ -6,7 +6,8 @@ const rl = readline.createInterface({
 });
 console.log("Enter to number of prisoners you want to get freed?");
 rl.question(
-  "NOTE: Since It's Node Application\nNOTE: It is suggested to keep number of prisoners to be less then equal to 30000 and in even number:\n",
+  `NOTE: Since It's Node Application\nNOTE: It is suggested to keep number 
+  of prisoners to be less then equal to 30000 and in even number:\n`,
   (number_of_prisoners) => {
     try {
       if (isNaN(number_of_prisoners)) {
@@ -37,21 +38,18 @@ class NPrisonerProblem {
   createDrawer() {
     let i = 0;
     while (i < this.prisoners) {
-      const prisonerNumber = parseInt(Math.random() * this.prisoners);
+      const prisonerNumber = Math.floor(Math.random() * this.prisoners);
       if (this.isPrisonerNumberExists(prisonerNumber) >= 0) {
         continue;
       } else {
-        this.drawer.push({
-          i: i,
-          value: prisonerNumber,
-        });
+        this.drawer.push(prisonerNumber);
         i++;
       }
     }
   }
 
   isPrisonerNumberExists(number) {
-    const index = this.drawer.findIndex((d) => d.value == number);
+    const index = this.drawer.findIndex((d) => d == number);
     return index;
   }
 
@@ -70,7 +68,7 @@ class NPrisonerProblem {
         this.isFreed[number] = false;
         break;
       }
-      drawerNumber = this.drawer[drawerNumber].value;
+      drawerNumber = this.drawer[drawerNumber];
       drawers.push(drawerNumber);
       if (drawerNumber === number) {
         this.isFreed[number] = true;
