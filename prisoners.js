@@ -6,7 +6,8 @@ const rl = readline.createInterface({
 });
 console.log("Enter to number of prisoners you want to get freed?");
 rl.question(
-  `NOTE: Since It's Node Application\nNOTE: It is suggested to keep number 
+  `NOTE: Since It's Node Application
+  NOTE: It is suggested to keep number 
   of prisoners to be less then equal to 30000 and in even number:\n`,
   (number_of_prisoners) => {
     try {
@@ -76,7 +77,7 @@ class NPrisonerProblem {
       }
     }
     console.log("-----------------------------------------------");
-    console.log("prisoner number:", number);
+    console.log("prisoner number:", number + 1);
     console.log("Checked Drawers:", drawers.length);
     console.log("-----------------------------------------------");
   }
