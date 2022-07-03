@@ -1,0 +1,25 @@
+{
+  "name": "n-prisoners",
+  "version": "1.0.0",
+  "description": "The 100 prisoners problem is a mathematical problem in probability theory and combinatorics. In this problem, 100 numbered prisoners must find their own numbers in one of 100 drawers in order to survive. The rules state that each prisoner may open only 50 drawers and cannot communicate with other prisoners. At first glance, the situation appears hopeless, but a clever strategy offers the prisoners a realistic chance of survival. Danish computer scientist Peter Bro Miltersen first proposed the problem in 2003.",
+  "main": "prisoners.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohitSG96/n-prisoners.git"
+  },
+  "keywords": [
+    "100",
+    "prisoners",
+    "prisoners",
+    "100"
+  ],
+  "author": "Mohit Goyal",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/MohitSG96/n-prisoners/issues"
+  },
+  "homepage": "https://github.com/MohitSG96/n-prisoners#readme"
+}
